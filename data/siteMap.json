@@ -1,0 +1,72 @@
+{
+  "defaultLocale": "en",
+  "root": {
+    "id": "__site",
+    "type": "site",
+    "contents": {
+      "en": {
+        "title": "Site",
+        "slug": "__site"
+      }
+    },
+    "children": [
+      {
+        "id": "SBs_9s9ezJtJCo5i-Xxay",
+        "type": "main_page",
+        "contents": {
+          "en": {
+            "title": "Home Page",
+            "slug": "home"
+          }
+        },
+        "children": []
+      },
+      {
+        "id": "T_FOAMkR0_39JFZiRKAWC",
+        "type": "root_page",
+        "contents": {
+          "en": {
+            "title": "Blog",
+            "slug": "blog"
+          }
+        },
+        "children": [
+          {
+            "id": "GC28TDfITn7PkSyqsxR31",
+            "type": "page",
+            "contents": {
+              "en": {
+                "title": "Blog Topic 1",
+                "slug": "blog-topic-1"
+              }
+            },
+            "children": [
+              {
+                "id": "JDnIKp28pZeKUxrIpm36v",
+                "type": "page",
+                "contents": {
+                  "en": {
+                    "title": "Blog Post 2",
+                    "slug": "blog-post-2"
+                  }
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "CFYCAeW2tC_QgQXzNsY0w",
+            "type": "page",
+            "contents": {
+              "en": {
+                "title": "Blog Post 1",
+                "slug": "blog-post-1"
+              }
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

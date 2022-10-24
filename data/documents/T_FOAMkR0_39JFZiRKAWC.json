@@ -1,0 +1,14 @@
+{
+  "id": "T_FOAMkR0_39JFZiRKAWC",
+  "type": "root_page",
+  "contents": {
+    "en": {
+      "title": "Blog",
+      "slug": "blog",
+      "dateUpdated": -1,
+      "contentData": {
+        "@class": "RootPage_ContentData"
+      }
+    }
+  }
+}

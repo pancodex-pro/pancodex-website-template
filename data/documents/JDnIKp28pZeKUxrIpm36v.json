@@ -1,0 +1,14 @@
+{
+  "id": "JDnIKp28pZeKUxrIpm36v",
+  "type": "page",
+  "contents": {
+    "en": {
+      "title": "Blog Post 2",
+      "slug": "blog-post-2",
+      "dateUpdated": -1,
+      "contentData": {
+        "@class": "Page_ContentData"
+      }
+    }
+  }
+}
