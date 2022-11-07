@@ -1,0 +1,70 @@
+{
+  "type": "root_page",
+  "contents": {
+    "en": {
+      "title": "Root Page",
+      "slug": "root_page",
+      "contentData": {
+        "body": [
+          {
+            "@class": "Section_ContentData",
+            "headerText": {
+              "@class": "Text_ContentData",
+              "htmlText": "<h4>Title For New Page</h4>"
+            },
+            "sectionType": "SECTION_HEADER"
+          },
+          {
+            "@class": "Section_ContentData",
+            "sectionType": "SECTION_PARAGRAPH",
+            "paragraphText": {
+              "@class": "Text_ContentData",
+              "htmlText": "Paragraph Text For New Page"
+            }
+          }
+        ],
+        "hero": [
+          {
+            "image": {
+              "@class": "Image_ContentData",
+              "altText": "Image For Page's Hero",
+              "imageUrlDesktop": "https://img.url",
+              "useImageUrlDesktopForAll": true
+            },
+            "@class": "Section_ContentData",
+            "sectionType": "SECTION_IMAGE"
+          },
+          {
+            "@class": "Section_ContentData",
+            "headerText": {
+              "@class": "Text_ContentData",
+              "htmlText": "Hero Title Text"
+            },
+            "sectionType": "SECTION_HEADER"
+          },
+          {
+            "cta": {
+              "title": "Call To Action Label",
+              "@class": "CallToAction_ContentData",
+              "actionUrl": "https://action.url"
+            },
+            "@class": "Section_ContentData",
+            "sectionType": "SECTION_CTA"
+          }
+        ],
+        "@class": "BasicPage_ContentData",
+        "metaTags": {
+          "@class": "MetaTags_ContentData",
+          "robots": {
+            "@class": "MetaTag_ContentData",
+            "tagSource": "useParentDocumentValue"
+          },
+          "description": {
+            "@class": "MetaTag_ContentData",
+            "tagSource": "useParentDocumentValue"
+          }
+        }
+      }
+    }
+  }
+}
