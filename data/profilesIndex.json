@@ -1,0 +1,25 @@
+{
+  "someId": {
+    "id": "someId",
+    "name": "Probe Profile",
+    "metaTags": {
+      "robots": null,
+      "google": null,
+      "openGraph": {
+        "url": null,
+        "type": null
+      }
+    },
+    "navigation": {
+      "useSiteTopLevelPagesList": null,
+      "useSiteTableOfContents": null,
+      "usePageTableOfContents": null
+    },
+    "socialLinks": {
+      "twitter": null,
+      "facebook": null
+    },
+    "copyright": null,
+    "termsAndConditionsUrl": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "default_page": {
+    "type": "page",
+    "name": "Default Page",
+    "id": "default_page"
+  },
+  "default_root_page": {
+    "type": "root_page",
+    "name": "Default Top Level Page",
+    "id": "default_root_page"
+  }
+}
