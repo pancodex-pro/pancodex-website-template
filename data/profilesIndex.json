@@ -3,21 +3,20 @@
     "id": "someId",
     "name": "Probe Profile",
     "metaTags": {
-      "robots": null,
-      "google": null,
-      "openGraph": {
-        "url": null,
-        "type": null
-      }
+      "robots": null
     },
     "navigation": {
-      "useSiteTopLevelPagesList": null,
-      "useSiteTableOfContents": null,
-      "usePageTableOfContents": null
+      "useTopLevelNavigation": true,
+      "useSiteNavigation": false,
+      "usePageNavigation": true
     },
-    "socialLinks": {
-      "twitter": null,
-      "facebook": null
+    "twitter": {
+      "link": "",
+      "creator": "",
+      "cardType": ""
+    },
+    "facebook": {
+      "link": ""
     },
     "copyright": null,
     "termsAndConditionsUrl": null
