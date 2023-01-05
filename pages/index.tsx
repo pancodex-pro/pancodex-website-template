@@ -44,10 +44,10 @@ const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps> & 
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <title key="pageTitle">{pageData.title}</title>
-                    <meta name="description" content={pageData.description} />
+                    <meta name="description" content={pageData.description as string} />
                     {/* Open Graph Data */}
                     <meta property="og:title" content={pageData.openGraphData.title} />
-                    <meta property="og:description" content={pageData.openGraphData.description} />
+                    <meta property="og:description" content={pageData.openGraphData.description as string} />
                     <meta property="og:locale" content={pageData.openGraphData.locale} />
                     {/*<meta property="og:locale:alternate" content={locale} />*/}
                     {/*<meta property="og:locale:alternate" content={locale} />*/}
@@ -55,9 +55,9 @@ const Home: NextPage = (props: InferGetStaticPropsType<typeof getStaticProps> & 
                     {/*<meta property="og:locale:alternate" content={locale} />*/}
                     {/* Twitter summary card */}
                     <meta name="twitter:card" content={pageData.twitterCard.card} />
-                    <meta name="twitter:title" content={pageData.twitterCard.title} />
-                    <meta name="twitter:description" content={pageData.twitterCard.description} />
-                    <meta name="twitter:image" content={pageData.twitterCard.image} />
+                    <meta name="twitter:title" content={pageData.twitterCard.title as string} />
+                    <meta name="twitter:description" content={pageData.twitterCard.description as string} />
+                    <meta name="twitter:image" content={pageData.twitterCard.image as string} />
                 </Head>
                 <PageDataProvider pageData={pageData}>
                     <Page/>

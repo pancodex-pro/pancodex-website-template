@@ -12,7 +12,6 @@ export async function fetchSiteMapData(locale?: string, documentSlug?: string): 
         }
         return {
             contextProxy: {
-                locale,
                 siteMap
             }
         }

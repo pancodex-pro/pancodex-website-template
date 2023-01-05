@@ -29,5 +29,5 @@ export const Img: React.FC<ImgProps> = (props: ImgProps) => {
             </div>
         );
     }
-    return (<Image className={className} alt={alt} src={url} />);
+    return (<Image className={className} alt={alt} src={url || ''} />);
 };

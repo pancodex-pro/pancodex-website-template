@@ -53,21 +53,21 @@ radialGradient rect stop svg text tspan use`.split(/([\s\n\r])/);
 
 const DATA_ATTRIBUTE = /^data-/i;
 
-const camelCase = function (string) {
+const camelCase = function (string: string) {
     return string.replace(/(?:-|_)([a-z])/g, function (g) { return g[1].toUpperCase(); });
 };
 
-const processAttributeName = function (name) {
+const processAttributeName = function (name: string) {
     return utils.DATA_ATTRIBUTE.test(name) ? name : utils.camelCase(name);
 };
 
-const unnamespaceAttributeName = function (name) {
+const unnamespaceAttributeName = function (name: string) {
     return name.replace(/(\w+):(\w)/i, function (match, namespace, char) {
         return namespace + char.toUpperCase();
     });
 };
 
-const sanitizeAttributes = function (attributes) {
+const sanitizeAttributes = function (attributes: any): any {
     if (!attributes) return null;
 
     if (attributes.class) {
@@ -75,7 +75,7 @@ const sanitizeAttributes = function (attributes) {
         delete attributes.class;
     }
 
-    const allowed = utils.ALLOWED_ATTRIBUTES.reduce(function (hash, name) {
+    const allowed = utils.ALLOWED_ATTRIBUTES.reduce(function (hash: Record<string, string>, name: string) {
         if (name in attributes) {
             var unnamespacedName = utils.unnamespaceAttributeName(name);
             hash[unnamespacedName] = unnamespacedName !== 'style' ? attributes[name] : styleAttribute(attributes[name]);
@@ -88,7 +88,7 @@ const sanitizeAttributes = function (attributes) {
         .filter(function (name) {
             return utils.DATA_ATTRIBUTE.test(name);
         })
-        .reduce(function (data, name) {
+        .reduce(function (data: Record<string, string>, name: string) {
             data[name] = attributes[name];
             return data;
         }, {});
@@ -96,7 +96,7 @@ const sanitizeAttributes = function (attributes) {
     return { ...allowed, ...custom };
 };
 
-const noUnSupportedTagNames = function (children) {
+const noUnSupportedTagNames = function (children: any): any {
     if (!children) return null;
 
     for (let child of children) {
@@ -110,10 +110,10 @@ const noUnSupportedTagNames = function (children) {
     return true;
 };
 
-const styleAttribute = function (string) {
-    const object = string.split(/\s*;\s*/g).reduce(function (hash, keyValue) {
+const styleAttribute = function (str: string) {
+    const object = str.split(/\s*;\s*/g).reduce(function (hash: Record<string, string>, keyValue: string) {
         const split = keyValue.split(/\s*:\s*/);
-        const key = utils.camelCase((split[0] || '').trim());
+        const key: string = utils.camelCase((split[0] || '').trim());
         hash[key] = (split[1] || '').trim();
         return hash;
     }, {});
@@ -125,7 +125,7 @@ const getElementById = function (svgObject: any, refId?: string) {
     if (svgObject.id === refId) {
         return svgObject
     } else {
-        return svgObject.children.forEach((child) => utils.getElementById(child))
+        return svgObject.children.forEach((child: any) => utils.getElementById(child))
     }
 };
 
