@@ -1,8 +1,8 @@
 import React from 'react';
-import {PageData, usePageData} from '../api';
+import {PageData, usePageData} from '@pancodex/bridge';
 
 export function Page() {
-    const pageData: PageData = usePageData();
+    const pageData: PageData | null = usePageData();
     return (
         <div>
             <pre>

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@pancodex/domain": "link:../pancodex-libs/packages/domain",
+    "@pancodex/bridge": "link:../pancodex-libs/packages/bridge",
     "fs-extra": "10.1.0",
     "next": "12.3.1",
     "react": "18.2.0",

@@ -5,12 +5,14 @@
     "en": {
       "title": "Home Page",
       "slug": "home",
+      "description": "The description of the site's home page",
+      "isCustomSlug": true,
       "contentData": {
-        "@class": "BasicPage_ContentData",
         "body": [],
         "hero": []
       },
-      "tags": {}
+      "tags": {},
+      "profileId": "__defaultProfile"
     }
   }
 }

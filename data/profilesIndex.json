@@ -1,7 +1,7 @@
 {
-  "someId": {
-    "id": "someId",
-    "name": "Probe Profile",
+  "__defaultProfile": {
+    "id": "__defaultProfile",
+    "name": "Default Profile",
     "metaTags": {
       "robots": null
     },

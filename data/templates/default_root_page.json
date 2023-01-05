@@ -2,15 +2,15 @@
   "type": "root_page",
   "contents": {
     "en": {
-      "title": "Root Page",
-      "slug": "root_page",
+      "title": "New Page",
+      "slug": "new-page",
       "isCustomSlug": false,
       "contentData": {
         "body": [],
-        "hero": [],
-        "@class": "BasicPage_ContentData"
+        "hero": []
       },
-      "tags": {}
+      "tags": {},
+      "profileId": "__defaultProfile"
     }
   }
 }

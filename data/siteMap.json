@@ -16,7 +16,9 @@
         "contents": {
           "en": {
             "title": "Home Page",
-            "slug": "home"
+            "slug": "home",
+            "tags": {},
+            "profileId": "__defaultProfile"
           }
         },
         "children": []
