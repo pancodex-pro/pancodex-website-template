@@ -22,7 +22,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
             notFound: true,
         }
     } else {
-        const pageData: PageData = createPageData(dataFetchStatus.contextProxy);
+        const pageData: PageData = await createPageData(dataFetchStatus.contextProxy);
         return {
             props: {
                 pageData,

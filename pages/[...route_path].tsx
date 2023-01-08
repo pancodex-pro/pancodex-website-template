@@ -39,7 +39,7 @@ export async function getStaticProps({locale, params, defaultLocale}: GetStaticP
                 notFound: true,
             }
         } else {
-            const pageData: PageData = createPageData(dataFetchStatus.contextProxy);
+            const pageData: PageData = await createPageData(dataFetchStatus.contextProxy);
             return {
                 props: {
                     pageData,
